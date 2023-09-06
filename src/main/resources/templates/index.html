@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Taming Thymeleaf</title>
+  <link rel="stylesheet" th:href="@{/css/application.css}">
+</head>
+<body>
+  <h1 th:text="${pageTitle}"></h1>
+  <div class="mx-6">
+    <ul>
+      <li th:each="scientist : ${scientists}" th:text="${scientist}"></li>
+    </ul>
+  </div>
+</body>
+</html>
